@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/ico/icono-viajemos.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- CDN Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CDN Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- CDN AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS Main -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+
+    <!-- header-->
+    <header class="header" id="inicio"> <!-- es el encabezado de la pagina-->
+      <div class="container vh-50"> <!-- se agrega el tipo de contenedor-->
+        <!-- nabvar-->
+        <nav class="navbar navbar-expand-lg row text-white justify-content-between align-items-center text-uppercase pt-4 pr-3"> <!-- se agrega la barra de navegacion-->
+          <!-- logo-->
+          <a href="index.html" class="col-12 col-md-auto text-reset text-center mb-3 mb-md-0">   <!-- se agrega una ancla o enlace-->
+            <img src="img/icono-viajemos.png" alt="Viajemos juntos" class="img-logo" >    <!-- se agrega una imagen como logo-->
+            Viajemos juntos <!-- escribi el nombre de la empresa al lado del logo-->
+          </a>
+          <!-- anclas-->
+          <div class="collapse col-12 col-md-auto d-flex flex-wrap justify-content-around navegacion">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link text-reset" href="formulario/formulario.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+          <!-- contenedor-->
+        <div class="row h-100 align-items-center"> <!-- se agrega otro conteedor con el 100% del tamaño sobrante con una alineacion de columna vertical-->
+            <!-- descripcion-->
+          <div class="class col-md-10 col-lg-6 text-white mostrarArriba"> <!-- se encierra el contenido en una columna de tamaño 6-->
+            <!-- titulo-->
+            <h1 class="text-capitalize">
+              <span class="text-warning h5">Viajemos juntos</span><br>
+              siempre seguro
+            </h1>
+            <!-- descripcion-->
+            <p class="d-none d-md-block">
+              Somos una empresa que empresa sus servicios a viajes y/o transportes por toda la republica mexicana asi tambien dando opciones al cliente de los diversos servicios que pueda hacer, solo haciendo una reservacion del servicio en este sitio web.
+            </p>
+            <!-- boton-->
+            <a href="#siguiente" class="text-reset btn btn-warning" id="inicio">Empecemos</a> <!-- se agrega un boton con un enlace-->
+          </div>
+        </div>
+      </div>
+      <img src="./img/parallax/cut-header.svg" alt=""> <!-- se agrega la imagen que corta en espiral-->
+    </header>
+
+    <main class="bg-white"><!-- es para que el footer quede fijo -->
+
+      <!-- seccion cartas-->
+      <section class="container">
+        <div class="row justify-content-md-center">
+          <!-- textos-->
+          <div class="col-12 text-center" data-aos="zoom-in" data-aos-duration="800"><!--se agrega un contenedor y todo lo que hay en el se centra-->
+            <h2 class="text-warning text-uppercase h6 pt-3" id="siguiente">¿a donde ir?</h2><!-- se le agrega un color naranja con las letras mayusculas y se le cambia de tamaño-->
+            <h3 class="text-capitalize">¿no se te ocurre ningun lugar?</h3><!-- esta clase hace que todas las primeras letras sean mayusculas-->
+            <p class="text-muted">Te daremos unos pocos ejemplos a los cuales puedes viajar somo muy flexibles a la hora de viajar y al hacer el servicio para que tu viaje sea mas como y como lo planeaste podemos llevarte a cualquier parte de la republica mexicana ya sea en el norte, centro o sur del pais</p><!-- el color de la letra es color gris con la clase-->
+          </div>
+          <!-- cartas-->
+          <!-- carta 1-->
+          <article class="col-md-6 col-lg-4 card-effect mb-3 mb-md-0">
+            <div class="card"><!-- se agrega un contentedor-->
+              <img src="./img/cartas/selva.jpg" alt="selva." class="card-img card-img-filter img-tamanio"><!-- se agrega una imagen-->
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center"><!-- esto hace que todos los textos se muestre enfrente de la imagen de fondo-->
+                <h4>Norte</h4>
+                <p>Chiapas</p>
+                <p>La Selva Lacandona es un lugar turistico, donde podrás encontrar territorios arqueológicos que prácticamente están sin descubrirse ya que fueron devoradas por la selva.</p>
+              </div>
+            </div>
+          </article>
+          <!-- carta 2-->
+          <article class="col-md-6 col-lg-4 card-effect mb-3 mb-md-0">
+            <div class="card"><!-- se agrega un contentedor-->
+              <img src="./img/cartas/piramide.jpg" alt="piramide" class="card-img card-img-filter img-tamanio"><!-- se agrega una imagen-->
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center"><!-- esto hace que todos los textos se muestre enfrente de la imagen de fondo-->
+                <h4>Centro</h4>
+                <p>Ciudad de mexico</p>
+                <p>Teotihuacan o bien "Ciudad de los dioses". El mayor atractivo es la zona arqueológica que por la cantidad y calidad de sus monumentos es la más visitada del país</p>
+              </div>
+            </div>
+          </article>
+          <!-- carta 3-->
+          <article class="col-md-6 col-lg-4 card-effect mt-md-4 mt-lg-0">
+            <div class="card"><!-- se agrega un contentedor-->
+              <img src="./img/cartas/cabos-san-lucas.jpg" alt="cabos-san-lucas" class="card-img card-img-filter img-tamanio"><!-- se agrega una imagen-->
+              <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center"><!-- esto hace que todos los textos se muestre enfrente de la imagen de fondo-->
+                <h4>Sur</h4>
+                <p>Quintana Roo</p>
+                <p>Cancun es el centro turístico más importante. Esta zona está rodeada por el mar Caribe y por playas de azul cristalino. La cultura maya puede observarse en cada esquina</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- comentario -->
+      <section class="comments linear-white mb-5"><!-- se agrega una nueva seccion -->
+        <img src="./img/parallax/cut-header.svg" alt="" class="transform-turn">
+        <div class="container"><!-- se encierra el contenido -->
+          <div class="row"><!-- y todo esto va a estar en una fila -->
+            <blockquote class="col-12 text-white text-center">
+              <!-- imagen -->
+              <img src="./img/comentario/voltaire.jpg" alt="Voltaire" class="comments__img">
+              <!-- comentario -->
+              <p>
+                “El verdadero viaje de descubrimiento no es buscar nuevas tierras, sino mirarlas con nuevos ojos” 
+              </p>
+              <!-- nombre -->
+              <footer class="blockquote-footer text-white">
+                <cite>Voltaire.</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- mas frecuentes-->
+      <section class="container"><!-- se crea una nueva seccion -->
+        <div class="row"  data-aos="zoom-in-up" data-aos-duration="800">
+          <!-- titulos -->
+          <div class="col-12 text-center" ><!-- los titulos se encierran en este contenedor -->
+            <h3 class="text-warning text-uppercase h6">mas frecuentes.</h3>
+            <h2 class="text-capitalize pb-4">te podria interesar.</h2>
+          </div>
+          <!-- media object 1 -->
+          <ul class="col-mb-12 col-md-6"><!--se crea una lista de 6 columnas -->
+            <li class="media">
+              <img src="./img/frecuentes/tulum.jpg." alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">Quintana Roo</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Zona%20Arqueológica%20de%20Tulum&stick=H4sIAAAAAAAAAONgFuLUz9U3MExKrzRWgjCrissttBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAuqxK6TsAAAA&ved=0CB4Q4mhqFwoTCODJ7bu-qfECFQAAAAAdAAAAABAG&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DZona%252BArqueol%2525C3%2525B3gica%252Bde%252BTulum%2526skpm%253D/m/01zsw8%2526t%253Dd" class="text-reset">Zona Arqueológica de Tulum.</a>
+                </h4>
+                <p>Tulum fue una ciudad amurallada de la cultura maya ubicada en el Estado de Quintana Roo, en el sureste de México, en la costa del mar Caribe. Es en la actualidad un gran atractivo turístico de la Riviera Maya.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <img src="./img/frecuentes/palacio-bellas-artes.jpg" alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">Ciudad de Mexico</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Palacio%20de%20Bellas%20Artes%20Ciudad%20de%20México&stick=H4sIAAAAAAAAAONgFuLQz9U3MCkuzFLiBLGMcsuKcrUUs5Ot9HPykxNLMvPz4AyrxJKSosRkELMYAIeAkrs6AAAA&ved=0CB4Q4mhqGAoTCODJ7bu-qfECFQAAAAAdAAAAABCBAQ&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DPalacio%252Bde%252BBellas%252BArtes%252BCiudad%252Bde%252BM%2525C3%2525A9xico%2526skpm%253D/m/02mvrm%2526t%253Dd" class="text-reset">Palacio de Bellas Artes.</a>
+                </h4>
+                <p>El Palacio de Bellas Artes es un recinto cultural ubicado en el Centro Histórico de la Ciudad de México, considerado el más importante en la manifestación de las artes en México y una de las casas de ópera más renombradas del mundo.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <img src="./img/frecuentes/malecon-puerto-vallarta.jpg" alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">Jalisco</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Malecón%20Puerto%20Vallarta&stick=H4sIAAAAAAAAAONgFuLUz9U3MEwqqSxX4gIx44vii0yNtBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAJ9aqqDwAAAA&ved=0CB0Q4mhqGAoTCODJ7bu-qfECFQAAAAAdAAAAABCVAQ&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DMalec%2525C3%2525B3n%252BPuerto%252BVallarta%2526skpm%253D/m/0_r_r52%2526t%253Dd" class="text-reset">Malecón Puerto Vallarta.</a>
+                </h4>
+                <p>El malecón de Puerto Vallarta es un rompeolas y un amplio andador de un kilómetro y medio de extensión situado frente al mar, que se ha convertido en uno de los principales puntos de encuentro de la ciudad.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <!-- media object 2 -->
+          <ul class="col-mb-12 col-md-6"><!--se crea una lista de 6 columnas -->
+            <li class="media">
+              <img src="./img/frecuentes/zona-arq-tajin.jpg" alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">Veracruz</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Zona%20Arqueológica%20El%20Tajín&stick=H4sIAAAAAAAAAONgFuLVT9c3NExKNi3JNqmyVOLUz9U3MKwqysvSUsxOttLPyU9OLMnMz4MzrBJLSooSk0HMYgAJsrPuPwAAAA&ved=0CBwQ4mhqGAoTCODJ7bu-qfECFQAAAAAdAAAAABDvAQ&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DZona%252BArqueol%2525C3%2525B3gica%252BEl%252BTaj%2525C3%2525ADn%2526skpm%253D/m/01zrnj%2526t%253Dd" class="text-reset">Zona Arqueológica El Tajín.</a>
+                </h4>
+                <p>El Tajín es una zona arqueológica precolombina de origen totonaca que se encuentra cerca de la ciudad de Papantla, Veracruz, México. Se cree que la ciudad de Tajín fue la capital del imperio Totonaca.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <img src="./img/frecuentes/grutas-cacahuamilpa.jpg" alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">guerrero</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Parque%20Nacional%20Grutas%20de%20Cacahuamilpa&stick=H4sIAAAAAAAAAONgFuLUz9U3MEwqKSlR4gIxzaryygpNtRSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAOQr-CjwAAAA&ved=0CBwQ4mhqGAoTCODJ7bu-qfECFQAAAAAdAAAAABCWAg&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DParque%252BNacional%252BGrutas%252Bde%252BCacahuamilpa%2526skpm%253D/m/06znvq5%2526t%253Dd" class="text-reset">Parque Nacional Grutas de Cacahuamilpa</a>
+                </h4>
+                <p>El parque nacional Grutas de Cacahuamilpa es un Área Natural Protegida, que de acuerdo con la Comisión Nacional de Áreas Naturales Protegidas de la SEMARNAT está dentro de la categoría de parque nacional.
+                </p>
+              </div>
+            </li>
+            <li class="media">
+              <img src="./img/frecuentes/momias-guanajuato.jpg" alt="Boat" class="media-object-img">
+              <div class="media-body">
+                <h5 class="h6 mb-0 mb-1">Guanajuato</h5>
+                <h4 class="h5">
+                  <a href="https://www.google.com/search?q=Museo%20de%20las%20Momias%20de%20Guanajuato&stick=H4sIAAAAAAAAAONgFuLUz9U3MLTIS7JQ4gYzDc3jLQyTtBSzk630c_KTE0sy8_PgDKvEkpKixGQQsxgAp7XIbz0AAAA&ved=0CB0Q4mhqGAoTCODJ7bu-qfECFQAAAAAdAAAAABCqAg&hl=es-419&gl=mx#fpstate=trskp&trifp=kpq%253DMuseo%252Bde%252Blas%252BMomias%252Bde%252BGuanajuato%2526skpm%253D/m/0117_81b%2526t%253Dd" class="text-reset">Museo de las Momias de Guanajuato.</a>
+                </h4>
+                <p>Se localiza en la explanada del panteón de Santa Paula. Su origen se remonta al descubrimiento de las primeras momias en el panteón de Santa Paula en 1865,  En la actualidad son más de cien las momias que forman parte del inventario del museo.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- carousel de imagenes -->
+      <section class="carousel slide" id="carousel-weston"><!-- se agrega uuna nueva seccion con un id -->
+        <div class="carousel-caption carousel-weston-middle">
+          <h2 class="d-none d-md-block text-uppercase">empieza solicitando el servicio</h2>
+          <p class="d-none d-lg-block">Un pedido es la forma en que te comunicas con el encargado de hacer tu viaje y asi tambien señalar ciertas especificaciones de a donde quieres viajar solo llenando un formulario</p>
+          <button class="d-none d-md-block btn btn-light px-4 text-capitalize mx-auto btn-outline-dark"> <!-- se agrega un botom con un enlace -->
+            <a href="formulario/formulario.html" class="text-reset">Empecemos</a>
+          </button>
+        </div>
+        <!-- slides -->
+        <div class="carousel-inner">
+          <!-- slide 1 -->
+          <div class="carousel-item active">
+            <img src="./img/carousel/paisaje2.png" alt="paisaje2" class="d-block w-100 ">
+          </div>
+          <!-- slide 2 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje7.png" alt="paisaje7" class="d-block w-100">
+          </div>
+          <!-- slide 3 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje1.png" alt="paisaje1" class="d-block w-100">
+          </div>
+          <!-- slide 4 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje4.png" alt="paisaje4" class="d-block w-100">
+          </div>
+          <!-- slide 5 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje6.png" alt="paisaje6" class="d-block w-100">
+          </div>
+          <!-- slide 6 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje3.png" alt="paisaje3" class="d-block w-100">
+          </div>
+          <!-- slide 7 -->
+          <div class="carousel-item">
+            <img src="./img/carousel/paisaje5.png" alt="paisaje5" class="d-block w-100">
+          </div>
+        </div>
+        <a href="#carousel-weston" class="carousel-control-prev" data-slide="prev"><!-- al enlace se le agrega el id y atributo lo cual hace que pueda desplazarse-->
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#carousel-weston" class="carousel-control-next" data-slide="next"><!-- al enlace se le agrega el id y atributo -->
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </section>
+
+      <!-- recomendaciones -->
+      <section class="container">
+        <div class="row" data-aos="zoom-in-up" data-aos-duration="800">
+          <!-- titulo -->
+          <h2 class="col-12 text-center pb-3 pt-3">
+            <span class="text-warning h6 text-uppercase">te podria interesar</span><br>
+         </h2>
+          <!-- descripcion 1 -->
+          <div class="col-12 col-md-6">
+            <p>
+            Muchas veces cuando viajamos tenemos en cuenta muchas variables, como lugares interesantes, el clima, el alojamiento o la vida social del destino. Pero rara vez, reflexionamos sobre el impacto de nuestras vacaciones.
+            </p>
+            <p>Viajar es una actividad que todos disfrutamos. Cuando salimos de vacaciones, podemos ser simples turistas o contribuir a transformar nuestro entorno positivamente.
+            </p>
+            <p>Con valores de tolerancia y aprendizaje entre las culturas, el turismo responsable se opone al turismo de masas.
+            </p>
+          </div>
+            <!-- descripcion 2 -->
+          <div class="col-12 col-md-6">
+            <p>Aqui te dejamos unos unas recomendaciones para que tu viaje sea mas agradable
+            </p>
+            <ul class="list-unstyled">
+              <li>➢ Respeto mutuo</li>
+              <li>➢ Ayuda a conservar el entorno natural</li>
+              <li>➢ Consume recursos de manera responsable</li>
+              <li>➢ Respeta los usos y costumbres</li>
+              <li>➢ Compra y consume local</li>
+              <li>➢ Valora los recursos culturales</li>
+           </ul>
+          </div>
+          <h3 class="col-12 text-center pt-3 pb-3 text-uppercase" >
+             <span>empieza ya</span>
+          </h3>
+          <!-- preguntas --> 
+           <div class="col-6 col-md-3 text-center">
+             <h3 class="text-warning h6">¿como?</h3>
+             <p class="font-weight-bold text-capitalize">solo haz tu pedido</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <h3 class="text-warning h6">¿donde?</h3>
+            <p class="font-weight-bold text-capitalize">donde tu quieras.</p>
+          </div> 
+          <div class="col-6 col-md-3 text-center">
+            <h3 class="text-warning h6">¿por que?</h3>
+              <p class="font-weight-bold text-capitalize">por que tu mandas.</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+            <h3 class="text-warning h6">¿cuando?</h3>
+              <p class="font-weight-bold text-capitalize">cuando tu quieras.</p>
+          </div>
+         <!-- boton -->
+         <div class="w-100"></div><!-- se agrega un salto de columna para que no se conbine con la descripcion -->
+          <a href="#inicio" class="col-auto btn btn-warning text-white mx-auto my-4 text-capitalize">inicio</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer class="bg-dark text-white py-4 position-sticky footer">
+      <div class="container">
+        <nav class="row justify-content-center">
+          <!-- logo -->
+          <a href="index.html" class="col-12 col-md-3 text-reset text-uppercase d-flex align-items-center justify-content-center mb-3 mb-md-0">
+            <img src="./img/icono-viajemos.png" alt="Viajemosv" class="img-logo mr-2">
+            Viajemos Juntos
+          </a>
+          <!-- menu 1 -->
+          <ul class="col-5 col-md-3 list-unstyled"><!-- se crea una lista  -->
+            <li class="font-weight-bold text-uppercase">correo electronico</li>
+            <li><a href="https://www.google.com/gmail/" class="text-reset">Viajemos.j@gmail.com</a></li>
+          </ul>
+          <!-- menu 2-->
+          <ul class="col-5 col-md-3 list-unstyled"><!-- se crea la segunda lista -->
+            <li class="font-weight-bold text-uppercase">telefono</li>
+            <li><p class="text-reset">777 239 1637</p></li>
+          </ul>
+          <!-- redes sociales -->
+          <ul class=" col-10 col-md-3 list-unstyled">
+            <li class="font-weight-bold text-uppercase">Redes sociales.</li>
+            <li class="d-flex justify-content-between">
+              <!-- FB -->
+              <a href="#" class="text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <!-- twitter -->
+              <a href="#" class="text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <!-- instagram -->
+              <a href="#" class="text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <!-- pinterest -->
+              <a href="#" class="text-reset">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- animacion -->
+    <script src="js/animacion.js"></script>
+  </body>
+</html>

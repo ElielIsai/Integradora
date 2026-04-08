@@ -1,0 +1,174 @@
+/* ENCABEZADO */
+.header{
+	background-image: url(../img/parallax/bg-header.jpg); /* imagen de fondo */
+	background-position: center;                 /* posicioan la imagen centrandola */
+	background-size: cover;
+	background-attachment: fixed;        /* tamaño del fondo  */
+	position: relative;							/* es para la posicion  */
+}
+.img-logo{
+	width: 50px;                                /* se le pone un ancho de 50 pixeles a la imagen */
+	height: 35px;                               /* se le pone un alto de 35 pixeles a la imagen */
+}
+.linear-white::after{                                 /* toda esta parte se hace para tapar una linea que aparece hasta abajo que hace que se vea mal */
+	content: "";
+	display: block;
+	width: 100%;
+	height: 10px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+}
+.vh-50{
+	height: 50vmin;                             /* todos los elementos que contengan esta clase van a tener una altura de 50 */
+}
+
+.navegacion ul li::before {								/* es para darle una animacion a la barra de navegacion  */
+	content: "";
+	height: 3px;
+	width: 0%;
+	background: gray;
+	position: absolute;
+	left: 0;
+	bottom: -12px;
+	transition: 0.4s ease-out;
+}
+
+.navegacion ul li:hover::before {
+	width: 100%;
+}
+
+/* CARTAS */
+
+.card{
+	transition-duration: .6s;                    /* hace que el cambio no sea tan brusco   */
+	clip-path: polygon(
+	 50% 0,
+	 100% 0,
+	 100% 50%,
+	 100% 100%, 
+	 50% 100%, 
+	 0% 100%, 
+	 0 50%, 
+	 0 0
+	 );                  
+}
+
+.card-effect:hover .card{                       /* esto hace que el rectangulo se convierta en un rombo al pasar el cursor */
+	clip-path: polygon(
+	 50% 0,
+	 50% 0,
+	 100% 50%,
+	 100% 50%, 
+	 50% 100%, 
+	 50% 100%, 
+	 0 50%, 
+	 0 50%
+	 );
+} 
+
+.card-img-filter{
+	filter: brightness(0.5);                     /* es para darle un tono oscuro a la imagen  */
+}
+
+.card-img-overlay{
+	transition-duration: .6s;					/* hace que no sea tan brusco el cambio de tamaño del texto */
+}
+
+.card-effect:hover .card-img-overlay{             /* hace mas pequeño el texto cuando se hace rombo el rectangulo */
+	transform: scale(.9);
+}
+
+.img-tamanio{                                 /*es para acomodar el largo de las imagenes*/
+	height: 530px; 
+}
+
+/* comentario */
+
+.comments {
+	background-image: url(../img/parallax/bg-clients.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.comments.linear-white::after{                   /* hace que el elemento comments tenga presente la clase linear-white que se mueva de arriba hacia abajo*/
+	top: 0;
+}
+
+.comments__img{
+	--tamano:  80px;                            /* se agrega una variable y se le asigna un valor */
+	width: var(--tamano);                       /* el valor de la variable se le asina al ancho y largo */
+	height: var(--tamano);
+	object-fit: cover;
+	border-radius: 50%;                         /* hace que se haga redondo */
+	box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);              /* se le agrega una sombra */
+	border: 3px ridge #fff;                   /* se le agrega un borde color blanco */
+}
+
+.transform-turn{
+	transform: rotate(.5turn);
+}
+
+/* seccion frecuente */
+
+.media-object-img {                               /* se agrega una variable y se le asignaa a lo ancho y alto para unaimagen que se va a utilizar */
+	--tamano:  65px;
+	width: var(--tamano);
+	height: var(--tamano);
+	margin-right: 15px;
+}
+
+/* carousel */
+
+.carousel-weston-middle {                            /* hace que el texto se mueva de arriba hacia abajo un 35% */
+	top: 35%;
+}
+
+/* pie de pagina */
+
+.footer {
+
+   bottom: 0;
+   z-index: -10; 
+}
+
+/* efecto scroll */
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* para hacer responsivo en panatallas de celulares */
+@media screen and (max-width: 375px){
+	.vh-50 {
+		height: 50vmax;
+	}
+}
+
+@media screen and (max-width: 450px){
+	.vh-50 {
+		height: 55vmax;
+	}
+}
+
+.animado {
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.mostrarArriba{
+	animation: mostrarArriba 4s;
+}
+
+@keyframes mostrarArriba {
+	0%{
+		transform: translateY(60px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
