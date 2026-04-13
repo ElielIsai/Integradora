@@ -21,9 +21,3 @@ services:
     restart: unless-stopped
     volumes:
       - ./html-prueba1:/usr/share/nginx/html
-
-  npm:
-    volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
-
