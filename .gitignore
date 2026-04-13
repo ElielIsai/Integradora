@@ -1,2 +1,5 @@
 /letsencrypt
 letsencrypt
+docker-compose.yml
+/data
+data

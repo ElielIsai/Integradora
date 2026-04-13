@@ -1,24 +1,11 @@
-# docker-compose.ec2.yml - versión para EC2, sin SSL
 version: '3.8'
 services:
-  app-proxy:
-    image: 'jc21/nginx-proxy-manager:latest'
+  proxy:
+    image: 'nginx:alpine'
     restart: unless-stopped
     ports:
       - '80:80'
-      - '81:81'
-      # Sin 443 - el ALB ya maneja SSL
     volumes:
-      - ./data:/data
-
-  web-viajes:
-    image: 'nginx:alpine'
-    restart: unless-stopped
-    volumes:
-      - ./html-viajes:/usr/share/nginx/html
-
-  web-prueba1:
-    image: 'nginx:alpine'
-    restart: unless-stopped
-    volumes:
-      - ./html-prueba1:/usr/share/nginx/html
+      - ./nginx-ec2.conf:/etc/nginx/conf.d/default.conf
+      - ./html-viajes:/usr/share/nginx/html/viajes
+      - ./html-prueba1:/usr/share/nginx/html/prueba1
